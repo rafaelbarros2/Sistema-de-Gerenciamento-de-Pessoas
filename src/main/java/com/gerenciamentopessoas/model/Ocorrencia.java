@@ -1,4 +1,4 @@
-package com.desafioz.model;
+package com.gerenciamentopessoas.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

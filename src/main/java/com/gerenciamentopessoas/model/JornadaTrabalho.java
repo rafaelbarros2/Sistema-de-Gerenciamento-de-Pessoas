@@ -1,4 +1,4 @@
-package com.desafioz.model;
+package com.gerenciamentopessoas.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -17,13 +17,10 @@ import lombok.Setter;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class Empresa {
+public class JornadaTrabalho {
     @Id
     private long id;
     private String descricao;
-    private String cnpj;
-    private String endereco;;
-    private String bairro;
-    private String cidade;
-    private String telefone;
+
+
 }

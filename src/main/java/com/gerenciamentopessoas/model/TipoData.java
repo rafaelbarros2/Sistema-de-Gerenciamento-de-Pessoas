@@ -1,8 +1,7 @@
-package com.desafioz.model;
+package com.gerenciamentopessoas.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,11 +17,8 @@ import lombok.Setter;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class Localidade {
-    @Id
-    private long id;
-    @ManyToOne
-    private NivelAcesso nivelAcesso;
-    private String descricao;
-
+public class TipoData {
+	   @Id
+	    private long id;
+	    private String descricao;
 }

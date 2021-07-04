@@ -1,13 +1,10 @@
-package com.desafioz.model;
+package com.gerenciamentopessoas.model;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import javax.persistence.Embeddable;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
@@ -26,17 +23,7 @@ import lombok.Setter;
 @Entity
 public class Movimentacao {
 
-    @AllArgsConstructor
-    @NoArgsConstructor
-    @EqualsAndHashCode
-    @Embeddable
-    public static class MovimentacaoId implements Serializable {
-        private long idMovimentacao;
-        private long idUsuario;
-    }
-
     @EmbeddedId
-    @Id
     private MovimentacaoId id;
     private LocalDateTime dataEntrada;
     private LocalDateTime dataSaida;

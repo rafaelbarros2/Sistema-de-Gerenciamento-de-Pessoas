@@ -1,4 +1,4 @@
-package com.desafioz.model;
+package com.gerenciamentopessoas.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -17,8 +17,10 @@ import lombok.Setter;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class TipoData {
-	   @Id
-	    private long id;
-	    private String descricao;
+public class CategoriaUsuario {
+    @Id
+    private long id;
+    private String descricao;
+
+
 }

@@ -1,4 +1,4 @@
-package com.desafioz.controller;
+package com.gerenciamentopessoas.controller;
 
 import java.util.List;
 
@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.desafioz.model.JornadaTrabalho;
-import com.desafioz.service.JornadaService;
+import com.gerenciamentopessoas.model.JornadaTrabalho;
+import com.gerenciamentopessoas.service.JornadaService;
+
 
 @RestController
 @RequestMapping("/jornada")

@@ -1,4 +1,4 @@
-package com.desafioz.model;
+package com.gerenciamentopessoas.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -37,4 +37,6 @@ public class Usuario {
 	    private BigDecimal tolerancia;
 	    private LocalDateTime inicioJornada;
 	    private LocalDateTime finalJornada;
+	    
+	    
 }

@@ -1,13 +1,11 @@
-package com.desafioz.model;
+package com.gerenciamentopessoas.model;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import javax.persistence.Embeddable;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,24 +21,12 @@ import lombok.Setter;
 @EqualsAndHashCode
 @Builder
 @Entity
-
 public class BancoHoras {
 
-    @AllArgsConstructor
-    @NoArgsConstructor
-    @EqualsAndHashCode
-    @Embeddable
-    public static class BancoHorasId implements Serializable {
-
-        public long idBancoHoras;
-        public long idMovimentacao;
-        public long idUsuario;
-    }
-
     @EmbeddedId
-
-    @Id
-    public BancoHoras id;
+    public BancoHorasId id;
+    @ManyToOne
+    public Usuario usuario;
     public LocalDateTime dataTrabalhada;
     public BigDecimal quantidadeHoras;
     public BigDecimal saldoHoras;

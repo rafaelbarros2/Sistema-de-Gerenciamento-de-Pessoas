@@ -1,12 +1,12 @@
-package com.desafioz.service;
+package com.gerenciamentopessoas.service;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.desafioz.model.JornadaTrabalho;
-import com.desafioz.repository.JornadaRepository;
+import com.gerenciamentopessoas.model.JornadaTrabalho;
+import com.gerenciamentopessoas.repository.JornadaRepository;
 
 import antlr.collections.List;
 
@@ -17,7 +17,7 @@ public class JornadaService {
     JornadaRepository jornadaRepository;
 
     public JornadaTrabalho save(JornadaTrabalho jornadaTrabalho){
-
+    	
         return jornadaRepository.save(jornadaTrabalho);
     }
 

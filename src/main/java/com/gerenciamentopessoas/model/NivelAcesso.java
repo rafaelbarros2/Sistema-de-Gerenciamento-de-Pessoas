@@ -1,4 +1,4 @@
-package com.desafioz.model;
+package com.gerenciamentopessoas.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -17,10 +17,8 @@ import lombok.Setter;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class JornadaTrabalho {
+public class NivelAcesso {
     @Id
     private long id;
     private String descricao;
-
-
 }
