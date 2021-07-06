@@ -14,9 +14,6 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class BancoHorasId implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public long idBancoHoras;
     public long idMovimentacao;
